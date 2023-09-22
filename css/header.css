@@ -1,0 +1,90 @@
+.header {
+    background-color: black;
+}
+
+.header__inner {
+    display: flex;
+    padding: 42px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.header__navigation {
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__items {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s all;
+}
+
+.header__link:hover {
+    color: #aaa;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    width: 100%;
+    background-color: #eb5757;
+}
+
+.header__search {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px
+}
+
+.header__profile {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__profile-auth {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+}
+
+.header__profile-cart {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart-price {
+    color: white;
+}
+
+.cart-price--text {
+    font-size: 14px;
+}
