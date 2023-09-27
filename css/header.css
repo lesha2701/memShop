@@ -4,7 +4,7 @@
 
 .header__inner {
     display: flex;
-    padding: 42px 20px;
+    padding: 32px 20px;
     justify-content: space-between;
     align-items: center;
     position: relative;
